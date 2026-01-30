@@ -1,0 +1,2431 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECTACULAR BIRTHDAY | Abdul Rahaman - Tech Visionary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rainbow-1': '#FF0080',
+                        'rainbow-2': '#FF8C00',
+                        'rainbow-3': '#FFD700',
+                        'rainbow-4': '#32CD32',
+                        'rainbow-5': '#00BFFF',
+                        'rainbow-6': '#9370DB',
+                        'sparkle-gold': '#FFD700',
+                        'sparkle-silver': '#C0C0C0',
+                        'sparkle-pink': '#FF69B4',
+                        'sparkle-blue': '#00FFFF',
+                        'sparkle-green': '#7CFC00',
+                        'sparkle-purple': '#DA70D6',
+                        'glow-yellow': '#FFFF00',
+                        'glow-blue': '#00FFFF',
+                        'glow-pink': '#FF00FF',
+                        'deep-space': '#0A0A2A',
+                        'cosmic-purple': '#4B0082',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'dancing': ['Dancing Script', 'cursive'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        // Core Animations
+                        'rainbow-glow': 'rainbowGlow 8s linear infinite',
+                        'particle-float': 'particleFloat 15s ease-in-out infinite',
+                        'spin-3d': 'spin3D 20s linear infinite',
+                        'wave-motion': 'waveMotion 6s ease-in-out infinite',
+                        'pulse-rainbow': 'pulseRainbow 4s ease-in-out infinite',
+                        'float-sparkle': 'floatSparkle 10s ease-in-out infinite',
+                        'orbit': 'orbit 25s linear infinite',
+                        'nebula-flow': 'nebulaFlow 30s linear infinite',
+                        'starburst': 'starburst 2s ease-out forwards',
+                        'text-glow': 'textGlow 3s ease-in-out infinite',
+                        'morph-shape': 'morphShape 12s ease-in-out infinite',
+                        'color-cycle': 'colorCycle 15s linear infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'ripple': 'ripple 3s ease-out infinite',
+                        'bounce-3d': 'bounce3D 2s ease-in-out infinite',
+                        'twinkle': 'twinkle 3s ease-in-out infinite',
+                        'swing': 'swing 4s ease-in-out infinite',
+                        'zoom-rotate': 'zoomRotate 5s ease-in-out infinite',
+                        'slide-in-glow': 'slideInGlow 1.5s ease-out forwards',
+                        'confetti-rain': 'confettiRain 5s linear infinite',
+                        'fireworks': 'fireworks 3s ease-out forwards',
+                        'hologram': 'hologram 8s ease-in-out infinite',
+                        'matrix-fall': 'matrixFall 10s linear infinite',
+                        'galaxy-spin': 'galaxySpin 40s linear infinite',
+                        'energy-flow': 'energyFlow 6s linear infinite',
+                        
+                        // Transform Animations
+                        'transform-card': 'transformCard 8s ease-in-out infinite',
+                        'transform-text': 'transformText 6s ease-in-out infinite',
+                        'transform-image': 'transformImage 10s ease-in-out infinite',
+                        'transform-background': 'transformBackground 20s linear infinite',
+                        'transform-gradient': 'transformGradient 12s linear infinite',
+                        
+                        // Special Effects
+                        'birthday-blast': 'birthdayBlast 1.5s ease-out forwards',
+                        'candle-magic': 'candleMagic 5s ease-in-out infinite',
+                        'gift-reveal': 'giftReveal 2s ease-out forwards',
+                        'celebrate-pop': 'celebratePop 0.8s ease-out forwards',
+                        'wish-stars': 'wishStars 4s ease-out infinite',
+                    },
+                    keyframes: {
+                        // Core Animation Keyframes
+                        rainbowGlow: {
+                            '0%, 100%': { 
+                                filter: 'hue-rotate(0deg) brightness(1)',
+                                boxShadow: '0 0 20px #FF0080, 0 0 40px #FF8C00, 0 0 60px #FFD700'
+                            },
+                            '33%': { 
+                                filter: 'hue-rotate(120deg) brightness(1.2)',
+                                boxShadow: '0 0 20px #32CD32, 0 0 40px #00BFFF, 0 0 60px #9370DB'
+                            },
+                            '66%': { 
+                                filter: 'hue-rotate(240deg) brightness(1.4)',
+                                boxShadow: '0 0 20px #9370DB, 0 0 40px #FF0080, 0 0 60px #FF8C00'
+                            },
+                        },
+                        particleFloat: {
+                            '0%, 100%': { transform: 'translate(0, 0) rotate(0deg) scale(1)' },
+                            '25%': { transform: 'translate(20px, -30px) rotate(90deg) scale(1.2)' },
+                            '50%': { transform: 'translate(0, -50px) rotate(180deg) scale(1)' },
+                            '75%': { transform: 'translate(-20px, -30px) rotate(270deg) scale(0.8)' },
+                        },
+                        spin3D: {
+                            '0%': { transform: 'perspective(1000px) rotateY(0deg) rotateX(0deg)' },
+                            '25%': { transform: 'perspective(1000px) rotateY(90deg) rotateX(20deg)' },
+                            '50%': { transform: 'perspective(1000px) rotateY(180deg) rotateX(0deg)' },
+                            '75%': { transform: 'perspective(1000px) rotateY(270deg) rotateX(-20deg)' },
+                            '100%': { transform: 'perspective(1000px) rotateY(360deg) rotateX(0deg)' },
+                        },
+                        waveMotion: {
+                            '0%, 100%': { transform: 'translateY(0) skew(0deg, 0deg)' },
+                            '25%': { transform: 'translateY(-10px) skew(5deg, 0deg)' },
+                            '50%': { transform: 'translateY(0) skew(0deg, 5deg)' },
+                            '75%': { transform: 'translateY(10px) skew(-5deg, 0deg)' },
+                        },
+                        pulseRainbow: {
+                            '0%, 100%': { 
+                                opacity: 1,
+                                transform: 'scale(1)',
+                                filter: 'hue-rotate(0deg)'
+                            },
+                            '50%': { 
+                                opacity: 0.8,
+                                transform: 'scale(1.1)',
+                                filter: 'hue-rotate(180deg)'
+                            },
+                        },
+                        floatSparkle: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '33%': { transform: 'translateY(-25px) rotate(120deg)' },
+                            '66%': { transform: 'translateY(15px) rotate(240deg)' },
+                        },
+                        orbit: {
+                            '0%': { transform: 'rotate(0deg) translateX(150px) rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg) translateX(150px) rotate(-360deg)' },
+                        },
+                        nebulaFlow: {
+                            '0%': { backgroundPosition: '0% 0%' },
+                            '100%': { backgroundPosition: '400% 400%' },
+                        },
+                        starburst: {
+                            '0%': { transform: 'scale(0) rotate(0deg)', opacity: 1 },
+                            '70%': { opacity: 0.8 },
+                            '100%': { transform: 'scale(10) rotate(720deg)', opacity: 0 },
+                        },
+                        textGlow: {
+                            '0%, 100%': { 
+                                textShadow: '0 0 10px #FF0080, 0 0 20px #FF8C00, 0 0 30px #FFD700',
+                                color: '#FFFFFF'
+                            },
+                            '50%': { 
+                                textShadow: '0 0 20px #00BFFF, 0 0 40px #9370DB, 0 0 60px #FF0080',
+                                color: '#F0F0F0'
+                            },
+                        },
+                        morphShape: {
+                            '0%, 100%': { borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' },
+                            '25%': { borderRadius: '58% 42% 75% 25% / 76% 46% 54% 24%' },
+                            '50%': { borderRadius: '50% 50% 33% 67% / 55% 27% 73% 45%' },
+                            '75%': { borderRadius: '33% 67% 58% 42% / 63% 68% 32% 37%' },
+                        },
+                        colorCycle: {
+                            '0%': { backgroundColor: '#FF0080' },
+                            '20%': { backgroundColor: '#FF8C00' },
+                            '40%': { backgroundColor: '#FFD700' },
+                            '60%': { backgroundColor: '#32CD32' },
+                            '80%': { backgroundColor: '#00BFFF' },
+                            '100%': { backgroundColor: '#9370DB' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-400px 0' },
+                            '100%': { backgroundPosition: '400px 0' },
+                        },
+                        ripple: {
+                            '0%': { transform: 'scale(0)', opacity: 1 },
+                            '100%': { transform: 'scale(4)', opacity: 0 },
+                        },
+                        bounce3D: {
+                            '0%, 100%': { transform: 'translateY(0) rotateX(0deg)' },
+                            '50%': { transform: 'translateY(-20px) rotateX(180deg)' },
+                        },
+                        twinkle: {
+                            '0%, 100%': { opacity: 0.3, transform: 'scale(0.8)' },
+                            '50%': { opacity: 1, transform: 'scale(1.2)' },
+                        },
+                        swing: {
+                            '0%, 100%': { transform: 'rotate(-10deg)' },
+                            '50%': { transform: 'rotate(10deg)' },
+                        },
+                        zoomRotate: {
+                            '0%, 100%': { transform: 'scale(1) rotate(0deg)' },
+                            '50%': { transform: 'scale(1.2) rotate(180deg)' },
+                        },
+                        slideInGlow: {
+                            '0%': { 
+                                transform: 'translateX(-100px)',
+                                opacity: 0,
+                                filter: 'blur(10px)'
+                            },
+                            '100%': { 
+                                transform: 'translateX(0)',
+                                opacity: 1,
+                                filter: 'blur(0px)'
+                            },
+                        },
+                        confettiRain: {
+                            '0%': { transform: 'translateY(-100px) rotate(0deg)', opacity: 1 },
+                            '100%': { transform: 'translateY(100vh) rotate(720deg)', opacity: 0 },
+                        },
+                        fireworks: {
+                            '0%': { transform: 'scale(0)', opacity: 1 },
+                            '100%': { transform: 'scale(3)', opacity: 0 },
+                        },
+                        hologram: {
+                            '0%, 100%': { 
+                                opacity: 0.5,
+                                filter: 'hue-rotate(0deg) brightness(1)'
+                            },
+                            '50%': { 
+                                opacity: 0.8,
+                                filter: 'hue-rotate(180deg) brightness(1.5)'
+                            },
+                        },
+                        matrixFall: {
+                            '0%': { transform: 'translateY(-100px)', opacity: 0 },
+                            '5%': { opacity: 1 },
+                            '90%': { opacity: 1 },
+                            '100%': { transform: 'translateY(100vh)', opacity: 0 },
+                        },
+                        galaxySpin: {
+                            '0%': { transform: 'rotate(0deg) scale(1)' },
+                            '50%': { transform: 'rotate(180deg) scale(1.3)' },
+                            '100%': { transform: 'rotate(360deg) scale(1)' },
+                        },
+                        energyFlow: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' },
+                        },
+                        
+                        // Transform Animation Keyframes
+                        transformCard: {
+                            '0%': { 
+                                transform: 'perspective(1000px) rotateY(0deg) translateZ(0)',
+                                borderRadius: '20px'
+                            },
+                            '25%': { 
+                                transform: 'perspective(1000px) rotateY(90deg) translateZ(50px)',
+                                borderRadius: '50%'
+                            },
+                            '50%': { 
+                                transform: 'perspective(1000px) rotateY(180deg) translateZ(100px)',
+                                borderRadius: '10px'
+                            },
+                            '75%': { 
+                                transform: 'perspective(1000px) rotateY(270deg) translateZ(50px)',
+                                borderRadius: '40px 10px 40px 10px'
+                            },
+                            '100%': { 
+                                transform: 'perspective(1000px) rotateY(360deg) translateZ(0)',
+                                borderRadius: '20px'
+                            },
+                        },
+                        transformText: {
+                            '0%': { 
+                                transform: 'scale(1) rotate(0deg)',
+                                color: '#FF0080',
+                                textShadow: '0 0 10px #FF0080'
+                            },
+                            '25%': { 
+                                transform: 'scale(1.1) rotate(5deg)',
+                                color: '#00BFFF',
+                                textShadow: '0 0 20px #00BFFF'
+                            },
+                            '50%': { 
+                                transform: 'scale(1.2) rotate(0deg)',
+                                color: '#FFD700',
+                                textShadow: '0 0 30px #FFD700'
+                            },
+                            '75%': { 
+                                transform: 'scale(1.1) rotate(-5deg)',
+                                color: '#32CD32',
+                                textShadow: '0 0 20px #32CD32'
+                            },
+                            '100%': { 
+                                transform: 'scale(1) rotate(0deg)',
+                                color: '#FF0080',
+                                textShadow: '0 0 10px #FF0080'
+                            },
+                        },
+                        transformImage: {
+                            '0%': { 
+                                transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)',
+                                filter: 'brightness(1) hue-rotate(0deg)'
+                            },
+                            '25%': { 
+                                transform: 'perspective(1000px) rotateX(20deg) rotateY(90deg) scale(1.1)',
+                                filter: 'brightness(1.2) hue-rotate(90deg)'
+                            },
+                            '50%': { 
+                                transform: 'perspective(1000px) rotateX(0deg) rotateY(180deg) scale(1)',
+                                filter: 'brightness(1.5) hue-rotate(180deg)'
+                            },
+                            '75%': { 
+                                transform: 'perspective(1000px) rotateX(-20deg) rotateY(270deg) scale(1.1)',
+                                filter: 'brightness(1.2) hue-rotate(270deg)'
+                            },
+                            '100%': { 
+                                transform: 'perspective(1000px) rotateX(0deg) rotateY(360deg) scale(1)',
+                                filter: 'brightness(1) hue-rotate(360deg)'
+                            },
+                        },
+                        transformBackground: {
+                            '0%': { 
+                                background: 'radial-gradient(circle at 0% 0%, #FF0080, #0A0A2A)'
+                            },
+                            '25%': { 
+                                background: 'radial-gradient(circle at 100% 0%, #FF8C00, #0A0A2A)'
+                            },
+                            '50%': { 
+                                background: 'radial-gradient(circle at 100% 100%, #FFD700, #0A0A2A)'
+                            },
+                            '75%': { 
+                                background: 'radial-gradient(circle at 0% 100%, #00BFFF, #0A0A2A)'
+                            },
+                            '100%': { 
+                                background: 'radial-gradient(circle at 0% 0%, #FF0080, #0A0A2A)'
+                            },
+                        },
+                        transformGradient: {
+                            '0%': { 
+                                background: 'linear-gradient(45deg, #FF0080, #FF8C00, #FFD700)'
+                            },
+                            '33%': { 
+                                background: 'linear-gradient(45deg, #32CD32, #00BFFF, #9370DB)'
+                            },
+                            '66%': { 
+                                background: 'linear-gradient(45deg, #9370DB, #FF0080, #FF8C00)'
+                            },
+                            '100%': { 
+                                background: 'linear-gradient(45deg, #FF0080, #FF8C00, #FFD700)'
+                            },
+                        },
+                        
+                        // Special Effects Keyframes
+                        birthdayBlast: {
+                            '0%': { transform: 'scale(0) rotate(0deg)', opacity: 1 },
+                            '50%': { opacity: 0.8 },
+                            '100%': { transform: 'scale(8) rotate(360deg)', opacity: 0 },
+                        },
+                        candleMagic: {
+                            '0%, 100%': { 
+                                transform: 'scale(1)',
+                                filter: 'brightness(1) drop-shadow(0 0 10px #FFD700)'
+                            },
+                            '50%': { 
+                                transform: 'scale(1.3)',
+                                filter: 'brightness(2) drop-shadow(0 0 20px #FFFF00)'
+                            },
+                        },
+                        giftReveal: {
+                            '0%': { transform: 'scale(0) rotate(0deg)', opacity: 0 },
+                            '50%': { transform: 'scale(1.1) rotate(180deg)', opacity: 1 },
+                            '100%': { transform: 'scale(1) rotate(360deg)', opacity: 1 },
+                        },
+                        celebratePop: {
+                            '0%': { transform: 'scale(0)', opacity: 0 },
+                            '70%': { transform: 'scale(1.2)', opacity: 1 },
+                            '100%': { transform: 'scale(1)', opacity: 1 },
+                        },
+                        wishStars: {
+                            '0%': { transform: 'translateY(0) rotate(0deg)', opacity: 0 },
+                            '10%': { opacity: 1 },
+                            '90%': { opacity: 1 },
+                            '100%': { transform: 'translateY(-100px) rotate(180deg)', opacity: 0 },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ultra-Advanced CSS for Maximum Visual Impact */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0A0A2A 0%, #4B0082 50%, #0A0A2A 100%);
+            color: white;
+            overflow-x: hidden;
+            min-height: 100vh;
+            animation: transformBackground 20s linear infinite;
+            
+        }
+        
+        /* Cosmic Background with Nebula */
+        .cosmic-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 0, 128, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(0, 191, 255, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 40% 80%, rgba(255, 215, 0, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 60% 60%, rgba(147, 112, 219, 0.3) 0%, transparent 40%);
+            background-size: 400% 400%;
+            animation: nebulaFlow 30s linear infinite;
+            z-index: -2;
+            pointer-events: none;
+        }
+        
+        /* Animated Starfield */
+        .starfield {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, #EEE, transparent),
+                radial-gradient(2px 2px at 40px 70px, #FFF, transparent),
+                radial-gradient(3px 3px at 50px 160px, #DDD, transparent),
+                radial-gradient(2px 2px at 90px 40px, #FFF, transparent),
+                radial-gradient(2px 2px at 130px 80px, #FFF, transparent),
+                radial-gradient(3px 3px at 160px 120px, #DDD, transparent);
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            z-index: -1;
+            animation: galaxySpin 40s linear infinite;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        /* Glowing Text */
+        .glowing-text {
+            background: linear-gradient(45deg, #FF0080, #FF8C00, #FFD700, #32CD32, #00BFFF, #9370DB);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 400% 400%;
+            animation: textGlow 3s ease-in-out infinite, energyFlow 6s linear infinite;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* Particle System */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        /* Magic Card */
+        .magic-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 
+                0 0 20px rgba(255, 0, 128, 0.3),
+                0 0 40px rgba(255, 140, 0, 0.2),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .magic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .magic-card:hover::before {
+            left: 100%;
+        }
+        
+        .magic-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 
+                0 0 30px rgba(255, 0, 128, 0.5),
+                0 0 60px rgba(255, 140, 0, 0.3),
+                0 0 90px rgba(255, 215, 0, 0.2),
+                inset 0 0 30px rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Morphing Shapes */
+        .morph-shape {
+            background: linear-gradient(45deg, #FF0080, #00BFFF);
+            animation: morphShape 12s ease-in-out infinite, pulseRainbow 4s ease-in-out infinite;
+            filter: blur(20px);
+            opacity: 0.7;
+            z-index: 0;
+        }
+        
+        /* Special Effects Containers */
+        .effects-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        /* Confetti Container */
+        .confetti-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #FF0080, #FF8C00, #FFD700);
+            border-radius: 10px;
+            animation: rainbowGlow 8s linear infinite;
+        }
+        
+        /* Button Magic */
+        .magic-button {
+            background: linear-gradient(45deg, #FF0080, #FF8C00, #FFD700);
+            background-size: 300% 300%;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: energyFlow 6s linear infinite;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .magic-button::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #FF0080, #FF8C00, #FFD700, #32CD32, #00BFFF, #9370DB);
+            background-size: 400% 400%;
+            z-index: -1;
+            border-radius: 52px;
+            animation: rainbowGlow 8s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .magic-button:hover::before {
+            opacity: 1;
+        }
+        
+        .magic-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 10px 30px rgba(255, 0, 128, 0.4),
+                0 0 50px rgba(255, 140, 0, 0.3),
+                0 0 70px rgba(255, 215, 0, 0.2);
+        }
+        
+        /* Image Gallery with Transform */
+        .transform-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            animation: transformImage 10s ease-in-out infinite;
+        }
+        
+        .transform-image:hover {
+            animation-play-state: paused;
+            transform: perspective(1000px) rotateY(20deg) rotateX(10deg) scale(1.1);
+            box-shadow: 
+                0 20px 60px rgba(255, 0, 128, 0.6),
+                0 0 80px rgba(0, 191, 255, 0.4),
+                0 0 100px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* Floating Elements */
+        .floating-element {
+            animation: floatSparkle 10s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px currentColor);
+        }
+        
+        /* Special Celebration Elements */
+        .celebration-burst {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, #FF0080, transparent);
+            box-shadow: 0 0 40px #FF0080;
+            animation: birthdayBlast 1.5s ease-out forwards;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        
+        /* Candle Magic */
+        .candle-magic {
+            position: relative;
+            width: 20px;
+            height: 60px;
+            background: linear-gradient(to bottom, #FF8C00, #FFD700, #FFFF00);
+            border-radius: 10px 10px 0 0;
+            margin: 0 10px;
+            animation: candleMagic 5s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px #FFD700);
+        }
+        
+        .candle-magic::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 20px;
+            background: linear-gradient(to bottom, #FFFF00, #FF4500);
+            border-radius: 50% 50% 20% 20%;
+            animation: pulseRainbow 4s ease-in-out infinite;
+        }
+        
+        /* Gift Box */
+        .gift-box {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #FF0080, #9370DB);
+            border-radius: 15px;
+            animation: giftReveal 2s ease-out forwards, swing 4s ease-in-out infinite;
+            cursor: pointer;
+        }
+        
+        .gift-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .gift-box::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: #FFD700;
+            transform: translateY(-50%);
+        }
+        
+        /* Holographic Text */
+        .holographic-text {
+            background: linear-gradient(45deg, 
+                #FF0080 0%, 
+                #FF8C00 20%, 
+                #FFD700 40%, 
+                #32CD32 60%, 
+                #00BFFF 80%, 
+                #9370DB 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% 300%;
+            animation: hologram 8s ease-in-out infinite;
+        }
+        
+        /* Matrix Rain */
+        .matrix-rain {
+            position: absolute;
+            color: #00FF00;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            text-shadow: 0 0 10px #00FF00;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        /* Typewriter Effect */
+        .typewriter-container {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .typewriter-text {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #FF0080;
+            animation: 
+                typewriter 4s steps(40) 1s forwards,
+                blink 1s infinite;
+            width: 0;
+        }
+        
+        @keyframes typewriter {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #FF0080 }
+        }
+        
+        /* Sparkle Trail */
+        .sparkle-trail {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 100;
+        }
+        
+        /* Ripple Effect */
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 0, 128, 0.8);
+            animation: ripple 3s ease-out infinite;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- Background Elements -->
+    <div class="cosmic-bg"></div>
+    <div class="starfield"></div>
+    
+    <!-- Effects Containers -->
+    <div id="particlesContainer" class="effects-container"></div>
+    <div id="confettiContainer" class="confetti-container"></div>
+    <div id="celebrationContainer" class="effects-container"></div>
+    <div id="matrixContainer" class="effects-container"></div>
+    <div id="sparkleTrail" class="effects-container"></div>
+    
+    <!-- Header Section with Ultra Animations -->
+    <header class="relative py-12 px-4 z-20">
+        <div class="max-w-7xl mx-auto">
+            <!-- Animated Shapes Background -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+                <div class="morph-shape w-96 h-96 -top-48 -left-48"></div>
+                <div class="morph-shape w-80 h-80 top-1/4 -right-40" style="animation-delay: 2s;"></div>
+                <div class="morph-shape w-64 h-64 bottom-1/4 left-1/4" style="animation-delay: 4s;"></div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="relative z-10">
+                <!-- Floating Elements -->
+                <div class="floating-element absolute -top-10 left-10 text-4xl animate-twinkle" style="animation-delay: 0.5s;">✨</div>
+                <div class="floating-element absolute top-20 right-10 text-5xl animate-twinkle" style="animation-delay: 1s;">🎉</div>
+                <div class="floating-element absolute bottom-10 left-1/4 text-6xl animate-twinkle" style="animation-delay: 1.5s;">🌟</div>
+                
+                <div class="text-center mb-12">
+                    <!-- Main Title with Extreme Animations -->
+                    <div class="typewriter-container mb-6">
+                        <h1 class="text-5xl md:text-8xl font-bold mb-4 glowing-text animate-slide-in-glow">
+                            <span class="typewriter-text">HAPPY BIRTHDAY</span>
+                        </h1>
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-6xl font-dancing font-bold mb-6 holographic-text animate-transform-text">
+                        Abdul Rahaman
+                    </h2>
+                    
+                    <p class="text-xl md:text-2xl font-montserrat mb-8 max-w-3xl mx-auto animate-pulse-rainbow">
+                        Celebrating an extraordinary Tech Visionary, Inspiring Leader, and Remarkable Human Being
+                    </p>
+                    
+                    <!-- Animated Badges -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-10">
+                        <div class="px-6 py-3 bg-gradient-to-r from-rainbow-1 to-rainbow-2 rounded-full font-bold animate-bounce-3d">
+                            🚀 Tech Team Leader
+                        </div>
+                        <div class="px-6 py-3 bg-gradient-to-r from-rainbow-3 to-rainbow-4 rounded-full font-bold animate-bounce-3d" style="animation-delay: 0.2s;">
+                            💡 Knowledge Expert
+                        </div>
+                        <div class="px-6 py-3 bg-gradient-to-r from-rainbow-5 to-rainbow-6 rounded-full font-bold animate-bounce-3d" style="animation-delay: 0.4s;">
+                            🌟 Inspiring Mentor
+                        </div>
+                    </div>
+                    
+                    <!-- Celebration Button -->
+                    <button id="startUltraCelebration" class="magic-button text-xl px-10 py-5 mt-6">
+                        <i class="fas fa-sparkles mr-3"></i> BEGIN EXTRAVAGANT CELEBRATION
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content with Transform Animations -->
+    <main class="relative z-20 py-12 px-4">
+        <!-- Image Gallery Section -->
+        <section class="py-16" style="background-image: url('{% static 'abdu2.jpeg' %}'); background-size: cover; background-position: center;">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 glowing-text animate-wave-motion">
+                    Visual Journey of Excellence
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Image 1 with Transform -->
+                    <div class="magic-card p-4 transform-card animate-transform-card">
+                        <div class="transform-image h-64">
+                           <img src="{% static '/abdu.png' %}" 
+                                 alt="Abdul Rahaman Leadership" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                <h3 class="text-white text-xl font-bold">Visionary Leader</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 with Transform -->
+                    <div class="magic-card p-4 transform-card animate-transform-card" style="animation-delay: 1s;">
+                        <div class="transform-image h-64">
+                            <img src="{% static '/abdu1.jpeg' %}" 
+                                 alt="Abdul Rahaman Thoughtful" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                <h3 class="text-white text-xl font-bold">Strategic Thinker</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 with Transform -->
+                    <div class="magic-card p-4 transform-card animate-transform-card" style="animation-delay: 2s;">
+                        <div class="transform-image h-64">
+                            <img src="{% static '/abdu2.jpeg' %}" 
+                                 alt="Abdul Rahaman Smiling" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                <h3 class="text-white text-xl font-bold">Inspiring Presence</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 with Transform -->
+                    <div class="magic-card p-4 transform-card animate-transform-card" style="animation-delay: 3s;">
+                        <div class="transform-image h-64">
+                            <img src="{% static '/abdu3.jpeg' %}" 
+                                 alt="Abdul Rahaman Professional" 
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                <h3 class="text-white text-xl font-bold">Knowledge Master</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View More Button -->
+                <div class="text-center mt-12">
+                    <button id="viewTransformGallery" class="magic-button">
+                        <i class="fas fa-expand mr-2"></i> EXPLORE MORE VISUALS
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Celebration Section -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 glowing-text animate-wave-motion">
+                    Interactive Celebration Zone
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Candle Magic -->
+                    <div class="magic-card p-8 text-center">
+                        <div class="text-5xl mb-6 animate-zoom-rotate">🎂</div>
+                        <h3 class="text-2xl font-bold mb-4 holographic-text">Candle Magic</h3>
+                        <p class="text-gray-300 mb-6">Light up the birthday candles with magic!</p>
+                        
+                        <div class="flex justify-center mb-6">
+                            <div class="candle-magic"></div>
+                            <div class="candle-magic" style="animation-delay: 0.5s"></div>
+                            <div class="candle-magic" style="animation-delay: 1s"></div>
+                            <div class="candle-magic" style="animation-delay: 1.5s"></div>
+                            <div class="candle-magic" style="animation-delay: 2s"></div>
+                        </div>
+                        
+                        <button id="blowCandlesMagic" class="magic-button w-full">
+                            <i class="fas fa-wind mr-2"></i> BLOW CANDLES
+                        </button>
+                    </div>
+                    
+                    <!-- Gift of Knowledge -->
+                    <div class="magic-card p-8 text-center">
+                        <div class="text-5xl mb-6 animate-swing">🎁</div>
+                        <h3 class="text-2xl font-bold mb-4 holographic-text">Gift of Knowledge</h3>
+                        <p class="text-gray-300 mb-6">Open Abdul's gift of wisdom and expertise</p>
+                        
+                        <div class="flex justify-center mb-6">
+                            <div class="gift-box" id="knowledgeGift"></div>
+                        </div>
+                        
+                        <button id="openGiftMagic" class="magic-button w-full">
+                            <i class="fas fa-gift mr-2"></i> OPEN GIFT
+                        </button>
+                    </div>
+                    
+                    <!-- Birthday Wishes -->
+                    <div class="magic-card p-8 text-center">
+                        <div class="text-5xl mb-6 animate-float-sparkle">✨</div>
+                        <h3 class="text-2xl font-bold mb-4 holographic-text">Star Wishes</h3>
+                        <p class="text-gray-300 mb-6">Send your wishes to the stars</p>
+                        
+                        <div class="relative h-32 mb-6 overflow-hidden">
+                            <div id="wishStarsContainer" class="absolute inset-0"></div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <input type="text" 
+                                   id="wishInput" 
+                                   class="w-full p-3 bg-transparent border-2 border-rainbow-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-rainbow-1"
+                                   placeholder="Type your wish...">
+                            <button id="sendWishMagic" class="magic-button w-full">
+                                <i class="fas fa-star mr-2"></i> SEND WISH
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Particle Symphony Section -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 glowing-text animate-wave-motion">
+                    Particle Symphony
+                </h2>
+                
+                <div class="magic-card p-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                        <button id="rainbowParticles" class="magic-button" data-color="rainbow">
+                            <i class="fas fa-palette mr-2"></i> RAINBOW
+                        </button>
+                        <button id="sparkleParticles" class="magic-button" data-color="sparkle">
+                            <i class="fas fa-sparkles mr-2"></i> SPARKLE
+                        </button>
+                        <button id="galaxyParticles" class="magic-button" data-color="galaxy">
+                            <i class="fas fa-star-and-crescent mr-2"></i> GALAXY
+                        </button>
+                        <button id="fireworkParticles" class="magic-button" data-color="firework">
+                            <i class="fas fa-fire mr-2"></i> FIREWORKS
+                        </button>
+                    </div>
+                    
+                    <div class="relative h-64 rounded-xl overflow-hidden border-2 border-rainbow-1">
+                        <div id="particleStage" class="absolute inset-0"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p>Click buttons to create particle symphonies!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-300">Particle Count: </span>
+                            <span id="particleCount" class="text-rainbow-1 font-bold">0</span>
+                        </div>
+                        <button id="clearParticles" class="px-4 py-2 bg-gradient-to-r from-rainbow-6 to-rainbow-1 rounded-lg">
+                            Clear All
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matrix Rain Effect -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 glowing-text animate-wave-motion">
+        🎈 Birthday Wishes Playground 🎈
+    </h2>
+    
+    <div class="magic-card p-8 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="floating-balloon absolute w-16 h-20 bg-rainbow-1 rounded-full animate-float" style="left: 10%; top: 20%; animation-delay: 0s;"></div>
+            <div class="floating-balloon absolute w-14 h-18 bg-rainbow-2 rounded-full animate-float" style="left: 30%; top: 60%; animation-delay: 1s;"></div>
+            <div class="floating-balloon absolute w-18 h-22 bg-rainbow-3 rounded-full animate-float" style="left: 70%; top: 30%; animation-delay: 2s;"></div>
+            <div class="floating-balloon absolute w-16 h-20 bg-rainbow-4 rounded-full animate-float" style="left: 85%; top: 70%; animation-delay: 3s;"></div>
+            <div class="floating-balloon absolute w-14 h-18 bg-rainbow-5 rounded-full animate-float" style="left: 20%; top: 80%; animation-delay: 4s;"></div>
+            
+            <!-- Floating Confetti -->
+            <div class="confetti-piece absolute w-3 h-3 bg-rainbow-1 rounded animate-confetti-fall" style="left: 15%; animation-delay: 0.5s;"></div>
+            <div class="confetti-piece absolute w-4 h-4 bg-rainbow-2 rounded animate-confetti-fall" style="left: 40%; animation-delay: 1.2s;"></div>
+            <div class="confetti-piece absolute w-3 h-3 bg-rainbow-3 rounded animate-confetti-fall" style="left: 65%; animation-delay: 0.8s;"></div>
+            <div class="confetti-piece absolute w-4 h-4 bg-rainbow-4 rounded animate-confetti-fall" style="left: 90%; animation-delay: 1.5s;"></div>
+        </div>
+        
+        <!-- Main Wishes Display -->
+        <div id="wishesDisplay" class="h-96 rounded-lg overflow-hidden bg-gradient-to-br from-rainbow-1/20 to-rainbow-6/20 border-2 border-rainbow-3 flex flex-col items-center justify-center p-6 relative z-10">
+            <div class="text-center">
+                <div class="text-6xl mb-4 animate-bounce-slow">🎂</div>
+                <h3 class="text-3xl font-bold mb-2 text-white animate-pulse-rainbow">Happy Birthday Abdul!</h3>
+                <p class="text-xl text-gray-200 mb-6">Click the buttons to send special birthday wishes!</p>
+                
+                <!-- Current Wish Display -->
+                <div id="currentWish" class="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-6 animate-pulse-soft">
+                    <p class="text-2xl font-dancing text-white" id="wishText">Your birthday wishes will appear here!</p>
+                </div>
+                
+                <!-- Birthday Cake Animation -->
+                <div class="flex justify-center mb-6">
+                    <div class="relative">
+                        <div class="cake-layer w-32 h-8 bg-yellow-300 rounded-lg"></div>
+                        <div class="cake-layer w-36 h-10 bg-pink-400 rounded-lg mt-2"></div>
+                        <div class="cake-layer w-40 h-12 bg-purple-500 rounded-lg mt-2"></div>
+                        
+                        <!-- Candles -->
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                            <div class="candle w-4 h-12 bg-gradient-to-b from-yellow-400 to-orange-500 rounded-sm animate-candle-flicker"></div>
+                            <div class="candle w-4 h-12 bg-gradient-to-b from-blue-400 to-purple-500 rounded-sm animate-candle-flicker" style="animation-delay: 0.3s"></div>
+                            <div class="candle w-4 h-12 bg-gradient-to-b from-green-400 to-teal-500 rounded-sm animate-candle-flicker" style="animation-delay: 0.6s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Interactive Wishes Buttons -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+            <button id="wishFun" class="wish-button px-4 py-4 bg-gradient-to-r from-rainbow-1 to-rainbow-2 rounded-xl font-bold text-white hover:scale-105 transition-all duration-300 animate-float-slow">
+                <div class="text-2xl mb-2">😄</div>
+                Fun Wishes
+            </button>
+            
+            <button id="wishSuccess" class="wish-button px-4 py-4 bg-gradient-to-r from-rainbow-3 to-rainbow-4 rounded-xl font-bold text-white hover:scale-105 transition-all duration-300 animate-float-slow" style="animation-delay: 0.2s">
+                <div class="text-2xl mb-2">🏆</div>
+                Success Wishes
+            </button>
+            
+            <button id="wishHealth" class="wish-button px-4 py-4 bg-gradient-to-r from-rainbow-5 to-rainbow-6 rounded-xl font-bold text-white hover:scale-105 transition-all duration-300 animate-float-slow" style="animation-delay: 0.4s">
+                <div class="text-2xl mb-2">❤️</div>
+                Health Wishes
+            </button>
+            
+            <button id="wishMagic" class="wish-button px-4 py-4 bg-gradient-to-r from-sparkle-pink to-sparkle-blue rounded-xl font-bold text-white hover:scale-105 transition-all duration-300 animate-float-slow" style="animation-delay: 0.6s">
+                <div class="text-2xl mb-2">✨</div>
+                Magic Wishes
+            </button>
+        </div>
+        
+        <!-- Special Effects Buttons -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <button id="celebrateParty" class="px-4 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg font-bold text-white hover:scale-105 transition-all duration-300 animate-pulse-soft">
+                <i class="fas fa-party-horn mr-2"></i> Party Time!
+            </button>
+            
+            <button id="sendBalloons" class="px-4 py-3 bg-gradient-to-r from-pink-400 to-purple-500 rounded-lg font-bold text-white hover:scale-105 transition-all duration-300 animate-pulse-soft" style="animation-delay: 0.3s">
+                <i class="fas fa-birthday-cake mr-2"></i> Balloon Burst!
+            </button>
+            
+            <button id="fireworksShow" class="px-4 py-3 bg-gradient-to-r from-blue-400 to-teal-500 rounded-lg font-bold text-white hover:scale-105 transition-all duration-300 animate-pulse-soft" style="animation-delay: 0.6s">
+                <i class="fas fa-fireworks mr-2"></i> Fireworks!
+            </button>
+        </div>
+        
+        <!-- Custom Wish Input -->
+        <div class="mt-6">
+            <div class="flex gap-2">
+                <input type="text" 
+                       id="customWishInput" 
+                       class="flex-grow p-4 bg-white/10 backdrop-blur-sm border-2 border-rainbow-3 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-rainbow-1"
+                       placeholder="Type your own birthday wish for Abdul...">
+                <button id="sendCustomWish" class="px-6 py-4 bg-gradient-to-r from-rainbow-1 to-rainbow-6 rounded-lg font-bold text-white hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-paper-plane mr-2"></i> Send
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+    </main>
+
+    <!-- Ultra Celebration Footer -->
+    <footer class="relative py-12 px-4 z-20">
+        <div class="max-w-7xl mx-auto ">
+            <div class="magic-card p-10 text-center">
+                <h3 class="text-4xl font-bold mb-6 holographic-text">
+                    Ultimate Birthday Celebration for Abdul Rahaman
+                </h3>
+                
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    A spectacular tribute to an extraordinary leader, mentor, and visionary. 
+                    May your year be filled with as much brilliance as you bring to our lives.
+                </p>
+                
+                <!-- Final Celebration Button -->
+                <div class="flex flex-col items-center">
+                    <button id="ultimateCelebration" class="magic-button text-2xl px-12 py-6 mb-6 animate-pulse-rainbow">
+                        <i class="fas fa-crown mr-3"></i> LAUNCH ULTIMATE CELEBRATION
+                    </button>
+                    
+                    <div class="flex space-x-8 text-3xl">
+                        <a href="#" class="text-rainbow-1 hover:text-rainbow-2 transition transform hover:scale-125 animate-float-sparkle">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-rainbow-3 hover:text-rainbow-4 transition transform hover:scale-125 animate-float-sparkle" style="animation-delay: 0.2s">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-rainbow-5 hover:text-rainbow-6 transition transform hover:scale-125 animate-float-sparkle" style="animation-delay: 0.4s">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-sparkle-pink hover:text-sparkle-blue transition transform hover:scale-125 animate-float-sparkle" style="animation-delay: 0.6s">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-10 pt-8 border-t border-gray-700">
+                    <p class="text-gray-400">
+                        Created with ❤️, ✨, and endless 🎉 for Abdul Rahaman's special day
+                    </p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        © 2023 Ultra Celebration Experience • All animations active
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Ultra Animated Experience
+        document.addEventListener('DOMContentLoaded', function() {
+            initParticleSystem();
+            initConfettiSystem();
+            initMatrixRain();
+            initCelebrationEffects();
+            initInteractions();
+            initTypewriter();
+            
+            // Start with initial effects
+            setTimeout(() => {
+                createParticleBurst(100, 'rainbow');
+                createConfettiRain(50);
+                startMatrixRain();
+            }, 1000);
+        });
+        
+        // Advanced Particle System
+        function initParticleSystem() {
+            const container = document.getElementById('particleStage');
+            const globalContainer = document.getElementById('particlesContainer');
+            let particleCount = 0;
+            
+            function createParticle(type = 'rainbow', x = null, y = null) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = 5 + Math.random() * 15;
+                const colors = {
+                    rainbow: ['#FF0080', '#FF8C00', '#FFD700', '#32CD32', '#00BFFF', '#9370DB'],
+                    sparkle: ['#FFD700', '#C0C0C0', '#FF69B4', '#00FFFF', '#7CFC00', '#DA70D6'],
+                    galaxy: ['#4B0082', '#000080', '#191970', '#0A0A2A', '#9370DB', '#8A2BE2'],
+                    firework: ['#FF0000', '#FF4500', '#FFD700', '#FFFF00', '#FF69B4', '#FF00FF']
+                };
+                
+                const colorSet = colors[type] || colors.rainbow;
+                const color = colorSet[Math.floor(Math.random() * colorSet.length)];
+                
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.backgroundColor = color;
+                particle.style.left = (x !== null ? x : Math.random() * 100) + '%';
+                particle.style.top = (y !== null ? y : Math.random() * 100) + '%';
+                particle.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+                particle.style.opacity = 0.7 + Math.random() * 0.3;
+                particle.style.boxShadow = `0 0 ${size * 2}px ${color}`;
+                
+                container.appendChild(particle);
+                particleCount++;
+                
+                // Animation
+                const duration = 3 + Math.random() * 7;
+                const animationType = Math.random() > 0.5 ? 'particleFloat' : 'spin3D';
+                
+                particle.style.animation = `${animationType} ${duration}s ease-in-out forwards`;
+                particle.style.animationDelay = Math.random() * 2 + 's';
+                
+                // Update count
+                document.getElementById('particleCount').textContent = particleCount;
+                
+                // Remove after animation
+                setTimeout(() => {
+                    particle.remove();
+                    particleCount--;
+                    document.getElementById('particleCount').textContent = particleCount;
+                }, duration * 1000);
+            }
+            
+            function createParticleBurst(count, type) {
+                for (let i = 0; i < count; i++) {
+                    setTimeout(() => {
+                        createParticle(type);
+                    }, i * 10);
+                }
+            }
+            
+            function createGlobalParticle(type = 'rainbow') {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = 2 + Math.random() * 8;
+                const colors = {
+                    rainbow: ['#FF0080', '#FF8C00', '#FFD700', '#32CD32', '#00BFFF', '#9370DB'],
+                    sparkle: ['#FFD700', '#C0C0C0', '#FF69B4', '#00FFFF', '#7CFC00', '#DA70D6']
+                };
+                
+                const colorSet = colors[type] || colors.rainbow;
+                const color = colorSet[Math.floor(Math.random() * colorSet.length)];
+                
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.backgroundColor = color;
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.top = '-20px';
+                particle.style.borderRadius = '50%';
+                particle.style.opacity = 0.5 + Math.random() * 0.5;
+                particle.style.boxShadow = `0 0 ${size * 3}px ${color}`;
+                
+                globalContainer.appendChild(particle);
+                
+                // Animation
+                const duration = 5 + Math.random() * 10;
+                particle.style.animation = `confettiRain ${duration}s linear forwards`;
+                particle.style.animationDelay = Math.random() * 3 + 's';
+                
+                // Remove after animation
+                setTimeout(() => {
+                    particle.remove();
+                }, duration * 1000);
+            }
+            
+            // Particle control buttons
+            document.getElementById('rainbowParticles').addEventListener('click', function() {
+                createParticleBurst(50, 'rainbow');
+                createSparkleTrail();
+            });
+            
+            document.getElementById('sparkleParticles').addEventListener('click', function() {
+                createParticleBurst(50, 'sparkle');
+                createSparkleTrail();
+            });
+            
+            document.getElementById('galaxyParticles').addEventListener('click', function() {
+                createParticleBurst(50, 'galaxy');
+                createSparkleTrail();
+            });
+            
+            document.getElementById('fireworkParticles').addEventListener('click', function() {
+                createFireworkBurst();
+            });
+            
+            document.getElementById('clearParticles').addEventListener('click', function() {
+                container.innerHTML = '';
+                particleCount = 0;
+                document.getElementById('particleCount').textContent = '0';
+            });
+            
+            // Global particle generation
+            setInterval(() => {
+                if (Math.random() > 0.7) createGlobalParticle();
+            }, 300);
+            
+            window.createParticleBurst = createParticleBurst;
+        }
+        
+        // Confetti System
+        function initConfettiSystem() {
+            const container = document.getElementById('confettiContainer');
+            
+            function createConfetti() {
+                const confetti = document.createElement('div');
+                confetti.classList.add('particle');
+                
+                const size = 8 + Math.random() * 12;
+                const colors = ['#FF0080', '#FF8C00', '#FFD700', '#32CD32', '#00BFFF', '#9370DB'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const shapes = ['50%', '0', '10px 0'];
+                const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+                confetti.style.backgroundColor = color;
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = '-20px';
+                confetti.style.borderRadius = shape;
+                confetti.style.opacity = 0.8 + Math.random() * 0.2;
+                confetti.style.boxShadow = `0 0 ${size}px ${color}`;
+                
+                container.appendChild(confetti);
+                
+                // Animation
+                const duration = 5 + Math.random() * 10;
+                const rotation = Math.random() * 720;
+                confetti.style.animation = `confettiRain ${duration}s linear forwards`;
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                
+                // Remove after animation
+                setTimeout(() => {
+                    confetti.remove();
+                }, duration * 1000);
+            }
+            
+            function createConfettiRain(count = 100) {
+                for (let i = 0; i < count; i++) {
+                    setTimeout(() => createConfetti(), i * 20);
+                }
+            }
+            
+            window.createConfettiRain = createConfettiRain;
+        }
+        
+        // Matrix Rain Effect
+        function initMatrixRain() {
+            const container = document.getElementById('matrixDisplay');
+            const chars = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let matrixInterval;
+            let speed = 100;
+            
+            function createMatrixChar() {
+                const char = document.createElement('div');
+                char.classList.add('matrix-rain');
+                
+                char.textContent = chars.charAt(Math.floor(Math.random() * chars.length));
+                char.style.left = Math.random() * 100 + '%';
+                char.style.top = '-20px';
+                char.style.fontSize = (14 + Math.random() * 10) + 'px';
+                char.style.animation = `matrixFall ${(5 + Math.random() * 10)}s linear forwards`;
+                char.style.opacity = 0.7 + Math.random() * 0.3;
+                
+                container.appendChild(char);
+                
+                // Remove after animation
+                setTimeout(() => {
+                    char.remove();
+                }, 15000);
+            }
+            
+            function startMatrixRain() {
+                if (matrixInterval) clearInterval(matrixInterval);
+                matrixInterval = setInterval(createMatrixChar, speed);
+            }
+            
+            function stopMatrixRain() {
+                if (matrixInterval) clearInterval(matrixInterval);
+                matrixInterval = null;
+            }
+            
+            // Matrix controls
+            document.getElementById('startMatrix').addEventListener('click', startMatrixRain);
+            document.getElementById('stopMatrix').addEventListener('click', stopMatrixRain);
+            document.getElementById('speedUpMatrix').addEventListener('click', function() {
+                speed = Math.max(20, speed - 20);
+                if (matrixInterval) {
+                    stopMatrixRain();
+                    startMatrixRain();
+                }
+            });
+            document.getElementById('slowDownMatrix').addEventListener('click', function() {
+                speed = Math.min(500, speed + 20);
+                if (matrixInterval) {
+                    stopMatrixRain();
+                    startMatrixRain();
+                }
+            });
+            
+            window.startMatrixRain = startMatrixRain;
+            window.stopMatrixRain = stopMatrixRain;
+        }
+        
+        // Celebration Effects
+        function initCelebrationEffects() {
+            const container = document.getElementById('celebrationContainer');
+            
+            function createCelebrationBurst(type = 'starburst', x = '50%', y = '50%') {
+                const burst = document.createElement('div');
+                
+                if (type === 'starburst') {
+                    burst.classList.add('celebration-burst');
+                    burst.style.left = x;
+                    burst.style.top = y;
+                    burst.style.width = '0px';
+                    burst.style.height = '0px';
+                } else if (type === 'firework') {
+                    burst.classList.add('particle');
+                    burst.style.left = x;
+                    burst.style.top = y;
+                    burst.style.width = '10px';
+                    burst.style.height = '10px';
+                    burst.style.animation = `fireworks 3s ease-out forwards`;
+                    burst.style.background = 'radial-gradient(circle, #FFD700, #FF4500)';
+                    
+                    // Create smaller particles
+                    for (let i = 0; i < 20; i++) {
+                        setTimeout(() => {
+                            createFireworkParticle(x, y);
+                        }, i * 50);
+                    }
+                }
+                
+                container.appendChild(burst);
+                
+                // Remove after animation
+                setTimeout(() => {
+                    burst.remove();
+                }, 2000);
+            }
+            
+            function createFireworkParticle(x, y) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const colors = ['#FF0000', '#FF4500', '#FFD700', '#FFFF00', '#FF69B4', '#FF00FF'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const size = 3 + Math.random() * 5;
+                
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.backgroundColor = color;
+                particle.style.left = x;
+                particle.style.top = y;
+                particle.style.borderRadius = '50%';
+                particle.style.boxShadow = `0 0 ${size * 3}px ${color}`;
+                
+                container.appendChild(particle);
+                
+                // Animate outward
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 50 + Math.random() * 100;
+                const targetX = `calc(${x} + ${Math.cos(angle) * distance}px)`;
+                const targetY = `calc(${y} + ${Math.sin(angle) * distance}px)`;
+                
+                particle.style.transition = `all ${1 + Math.random()}s ease-out`;
+                
+                setTimeout(() => {
+                    particle.style.left = targetX;
+                    particle.style.top = targetY;
+                    particle.style.opacity = '0';
+                }, 10);
+                
+                // Remove after animation
+                setTimeout(() => {
+                    particle.remove();
+                }, 2000);
+            }
+            
+            function createFireworkBurst() {
+                const x = Math.random() * 80 + 10 + '%';
+                const y = Math.random() * 80 + 10 + '%';
+                createCelebrationBurst('firework', x, y);
+            }
+            
+            window.createCelebrationBurst = createCelebrationBurst;
+            window.createFireworkBurst = createFireworkBurst;
+        }
+        
+        // Interactive Elements
+        function initInteractions() {
+            // Start Ultra Celebration
+            document.getElementById('startUltraCelebration').addEventListener('click', function() {
+                const btn = this;
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i> CELEBRATION ACTIVATED!';
+                btn.style.background = 'linear-gradient(45deg, #FF0080, #FF8C00, #FFD700, #32CD32, #00BFFF, #9370DB)';
+                btn.style.animation = 'rainbowGlow 2s linear infinite';
+                
+                // Create massive effects
+                createParticleBurst(200, 'rainbow');
+                createConfettiRain(300);
+                createFireworkBurst();
+                
+                // Create celebration bursts
+                for (let i = 0; i < 10; i++) {
+                    setTimeout(() => {
+                        const x = Math.random() * 80 + 10 + '%';
+                        const y = Math.random() * 80 + 10 + '%';
+                        createCelebrationBurst('starburst', x, y);
+                    }, i * 200);
+                }
+                
+                // Reset button after 5 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = 'linear-gradient(45deg, #FF0080, #FF8C00, #FFD700)';
+                    btn.style.animation = 'energyFlow 6s linear infinite';
+                }, 5000);
+            });
+            
+            // Blow Candles Magic
+            document.getElementById('blowCandlesMagic').addEventListener('click', function() {
+                const candles = document.querySelectorAll('.candle-magic');
+                
+                candles.forEach((candle, index) => {
+                    setTimeout(() => {
+                        candle.style.animation = 'none';
+                        candle.style.filter = 'brightness(0.5)';
+                        
+                        // Create smoke effect
+                        const rect = candle.getBoundingClientRect();
+                        createSmokeEffect(rect.left + rect.width/2, rect.top);
+                    }, index * 200);
+                });
+                
+                // Create wish stars
+                createWishStars();
+            });
+            
+            // Open Gift Magic
+            document.getElementById('openGiftMagic').addEventListener('click', function() {
+                const gift = document.getElementById('knowledgeGift');
+                const btn = this;
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '<i class="fas fa-sparkles mr-2"></i> GIFT OPENING!';
+                gift.style.animation = 'giftReveal 2s ease-out forwards, swing 4s ease-in-out infinite';
+                
+                // Create particle burst
+                createParticleBurst(30, 'sparkle');
+                
+                // Create celebration effect
+                setTimeout(() => {
+                    createCelebrationBurst('starburst', '50%', '50%');
+                }, 1000);
+                
+                // Reset button
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            });
+            
+            // Send Wish Magic
+            document.getElementById('sendWishMagic').addEventListener('click', function() {
+                const wishInput = document.getElementById('wishInput');
+                const wish = wishInput.value.trim();
+                
+                if (wish) {
+                    const btn = this;
+                    const originalText = btn.innerHTML;
+                    
+                    btn.innerHTML = '<i class="fas fa-check mr-2"></i> WISH SENT!';
+                    btn.style.background = 'linear-gradient(45deg, #32CD32, #00BFFF)';
+                    
+                    // Create wish stars
+                    createWishStars();
+                    
+                    // Clear input
+                    wishInput.value = '';
+                    
+                    // Reset button
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.background = 'linear-gradient(45deg, #FF0080, #FF8C00, #FFD700)';
+                    }, 2000);
+                }
+            });
+            
+            // View Transform Gallery
+            document.getElementById('viewTransformGallery').addEventListener('click', function() {
+                const images = document.querySelectorAll('.transform-image');
+                const btn = this;
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '<i class="fas fa-sync-alt fa-spin mr-2"></i> TRANSFORMING...';
+                
+                // Trigger image transformations
+                images.forEach((img, index) => {
+                    setTimeout(() => {
+                        img.style.animationPlayState = 'running';
+                        
+                        // Create particle effect
+                        const rect = img.getBoundingClientRect();
+                        const x = rect.left + rect.width/2;
+                        const y = rect.top + rect.height/2;
+                        
+                        createParticleBurst(20, 'sparkle');
+                    }, index * 300);
+                });
+                
+                // Reset button
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 3000);
+            });
+            
+            // Ultimate Celebration
+            document.getElementById('ultimateCelebration').addEventListener('click', function() {
+                const btn = this;
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '<i class="fas fa-crown fa-spin mr-3"></i> ULTIMATE MODE!';
+                btn.style.animation = 'rainbowGlow 1s linear infinite';
+                
+                // Create ALL effects simultaneously
+                
+                // 1. Massive particle burst
+                createParticleBurst(500, 'rainbow');
+                
+                // 2. Confetti rain
+                createConfettiRain(500);
+                
+                // 3. Matrix rain
+                startMatrixRain();
+                
+                // 4. Fireworks
+                for (let i = 0; i < 20; i++) {
+                    setTimeout(() => {
+                        createFireworkBurst();
+                    }, i * 150);
+                }
+                
+                // 5. Celebration bursts
+                for (let i = 0; i < 15; i++) {
+                    setTimeout(() => {
+                        const x = Math.random() * 80 + 10 + '%';
+                        const y = Math.random() * 80 + 10 + '%';
+                        createCelebrationBurst('starburst', x, y);
+                    }, i * 100);
+                }
+                
+                // 6. Global particles
+                for (let i = 0; i < 100; i++) {
+                    setTimeout(() => {
+                        createGlobalParticle();
+                    }, i * 20);
+                }
+                
+                // 7. Wish stars
+                createWishStars();
+                setTimeout(createWishStars, 500);
+                setTimeout(createWishStars, 1000);
+                
+                // Reset after 10 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.animation = 'pulseRainbow 4s ease-in-out infinite';
+                    stopMatrixRain();
+                }, 10000);
+            });
+        }
+        
+        // Typewriter Effect
+        function initTypewriter() {
+            // Already implemented in CSS animation
+        }
+        
+        // Helper Functions
+        function createSmokeEffect(x, y) {
+            const smoke = document.createElement('div');
+            smoke.classList.add('particle');
+            
+            smoke.style.left = x + 'px';
+            smoke.style.top = y + 'px';
+            smoke.style.width = '20px';
+            smoke.style.height = '20px';
+            smoke.style.background = 'radial-gradient(circle, rgba(200,200,200,0.8), transparent)';
+            smoke.style.borderRadius = '50%';
+            
+            document.getElementById('celebrationContainer').appendChild(smoke);
+            
+            // Animate smoke
+            smoke.style.transition = 'all 2s ease-out';
+            setTimeout(() => {
+                smoke.style.transform = 'translateY(-30px) scale(2)';
+                smoke.style.opacity = '0';
+            }, 10);
+            
+            // Remove smoke
+            setTimeout(() => {
+                smoke.remove();
+            }, 2000);
+        }
+        
+        function createWishStars() {
+            const container = document.getElementById('wishStarsContainer');
+            
+            for (let i = 0; i < 10; i++) {
+                const star = document.createElement('div');
+                star.classList.add('particle');
+                
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = '100%';
+                star.style.width = '8px';
+                star.style.height = '8px';
+                star.style.background = '#FFD700';
+                star.style.borderRadius = '50%';
+                star.style.boxShadow = '0 0 10px #FFD700';
+                star.style.animation = `wishStars ${2 + Math.random() * 2}s ease-out forwards`;
+                star.style.animationDelay = Math.random() + 's';
+                
+                container.appendChild(star);
+                
+                // Remove after animation
+                setTimeout(() => {
+                    star.remove();
+                }, 4000);
+            }
+        }
+        
+        function createSparkleTrail() {
+            const container = document.getElementById('sparkleTrail');
+            
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.classList.add('sparkle-trail');
+                    
+                    sparkle.style.left = Math.random() * 100 + 'vw';
+                    sparkle.style.top = Math.random() * 100 + 'vh';
+                    sparkle.style.background = ['#FFD700', '#C0C0C0', '#FF69B4', '#00FFFF'][Math.floor(Math.random() * 4)];
+                    sparkle.style.animation = `twinkle ${1 + Math.random() * 2}s ease-in-out infinite`;
+                    
+                    container.appendChild(sparkle);
+                    
+                    // Remove after random time
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 3000 + Math.random() * 3000);
+                }, i * 200);
+            }
+        }
+    </script>
+    <style>
+    /* Additional styles for the new section */
+    .floating-balloon {
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+        box-shadow: 0 0 20px currentColor;
+    }
+    
+    .floating-balloon::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 15px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    
+    .confetti-piece {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1;
+        animation: confettiFall 3s linear infinite;
+    }
+    
+    .wish-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .wish-button:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    
+    .cake-layer {
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .candle {
+        position: relative;
+        animation: candleFlicker 1.5s ease-in-out infinite;
+    }
+    
+    .candle::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8px;
+        height: 12px;
+        background: linear-gradient(to bottom, #FFD700, #FF8C00);
+        border-radius: 50% 50% 20% 20%;
+        animation: pulseRainbow 2s ease-in-out infinite;
+    }
+    
+    @keyframes confettiFall {
+        0% {
+            transform: translateY(-100px) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(500px) rotate(360deg);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes bounceSlow {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    
+    @keyframes floatSlow {
+        0%, 100% {
+            transform: translateY(0) rotate(0deg);
+        }
+        33% {
+            transform: translateY(-15px) rotate(5deg);
+        }
+        66% {
+            transform: translateY(10px) rotate(-5deg);
+        }
+    }
+    
+    @keyframes pulseSoft {
+        0%, 100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+    }
+    
+    @keyframes candleFlicker {
+        0%, 100% {
+            opacity: 0.8;
+            filter: brightness(1);
+        }
+        50% {
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+    }
+</style>
+
+<script>
+    // Initialize Wishes Section
+    document.addEventListener('DOMContentLoaded', function() {
+        initWishesSection();
+    });
+    
+    function initWishesSection() {
+        // Wish Categories
+        const wishes = {
+            fun: [
+                "May your birthday be filled with laughter, joy, and endless fun! 🎉",
+                "Wishing you a day as bright and happy as your smile! 😄",
+                "Let's party like there's no tomorrow! Happy Birthday! 🥳",
+                "May your special day be packed with excitement and wonderful surprises! 🎁",
+                "Here's to a birthday full of happy moments and great memories! ✨"
+            ],
+            success: [
+                "Wishing you tremendous success in all your future endeavors! 🚀",
+                "May this year bring you closer to all your dreams and goals! 🌟",
+                "Success, happiness, and prosperity on your special day! 🏆",
+                "May every project you undertake be a huge success! 💼",
+                "Wishing you professional triumphs and personal fulfillment! 👑"
+            ],
+            health: [
+                "Wishing you excellent health, boundless energy, and vitality! ❤️",
+                "May you be blessed with good health and wellness always! 🌿",
+                "Here's to a healthy, happy, and prosperous year ahead! 💪",
+                "May you enjoy perfect health and endless joy! 🏃‍♂️",
+                "Wishing you strength, vitality, and wonderful health! 🌈"
+            ],
+            magic: [
+                "May magic fill your birthday with wonder and delight! ✨",
+                "Wishing you a day as magical as you are! 🧚‍♂️",
+                "Let the birthday magic begin! Sparkles and joy for you! 🌠",
+                "May your special day be sprinkled with fairy dust and joy! 🧚",
+                "Here's to a birthday filled with magical moments! 🔮"
+            ]
+        };
+        
+        // Current wish element
+        const wishText = document.getElementById('wishText');
+        const currentWish = document.getElementById('currentWish');
+        
+        // Fun Wishes Button
+        document.getElementById('wishFun').addEventListener('click', function() {
+            const randomWish = wishes.fun[Math.floor(Math.random() * wishes.fun.length)];
+            displayWish(randomWish, 'fun');
+            createWishEffect('fun');
+        });
+        
+        // Success Wishes Button
+        document.getElementById('wishSuccess').addEventListener('click', function() {
+            const randomWish = wishes.success[Math.floor(Math.random() * wishes.success.length)];
+            displayWish(randomWish, 'success');
+            createWishEffect('success');
+        });
+        
+        // Health Wishes Button
+        document.getElementById('wishHealth').addEventListener('click', function() {
+            const randomWish = wishes.health[Math.floor(Math.random() * wishes.health.length)];
+            displayWish(randomWish, 'health');
+            createWishEffect('health');
+        });
+        
+        // Magic Wishes Button
+        document.getElementById('wishMagic').addEventListener('click', function() {
+            const randomWish = wishes.magic[Math.floor(Math.random() * wishes.magic.length)];
+            displayWish(randomWish, 'magic');
+            createWishEffect('magic');
+        });
+        
+        // Party Time Button
+        document.getElementById('celebrateParty').addEventListener('click', function() {
+            createPartyEffect();
+            displayWish("It's party time! Let's celebrate Abdul's birthday! 🎊", 'party');
+        });
+        
+        // Balloon Burst Button
+        document.getElementById('sendBalloons').addEventListener('click', function() {
+            createBalloonBurst();
+            displayWish("Balloons for the birthday star! 🎈", 'balloons');
+        });
+        
+        // Fireworks Show Button
+        document.getElementById('fireworksShow').addEventListener('click', function() {
+            createFireworksShow();
+            displayWish("Fireworks for an amazing birthday! 🎆", 'fireworks');
+        });
+        
+        // Custom Wish Input
+        document.getElementById('sendCustomWish').addEventListener('click', function() {
+            const customInput = document.getElementById('customWishInput');
+            const customWish = customInput.value.trim();
+            
+            if (customWish) {
+                displayWish(customWish, 'custom');
+                createWishEffect('custom');
+                customInput.value = '';
+                
+                // Add to recent wishes
+                addToRecentWishes(customWish);
+            }
+        });
+        
+        // Enter key for custom wish
+        document.getElementById('customWishInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('sendCustomWish').click();
+            }
+        });
+        
+        // Display wish with animation
+        function displayWish(text, type) {
+            // Animate out
+            wishText.style.opacity = '0';
+            wishText.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                // Update text
+                wishText.textContent = text;
+                
+                // Change background based on type
+                const colors = {
+                    fun: 'from-yellow-400/20 to-orange-500/20',
+                    success: 'from-green-400/20 to-blue-500/20',
+                    health: 'from-red-400/20 to-pink-500/20',
+                    magic: 'from-purple-400/20 to-indigo-500/20',
+                    party: 'from-rainbow-1/20 to-rainbow-6/20',
+                    balloons: 'from-pink-400/20 to-purple-500/20',
+                    fireworks: 'from-blue-400/20 to-teal-500/20',
+                    custom: 'from-gray-400/20 to-white/20'
+                };
+                
+                currentWish.className = `bg-gradient-to-br ${colors[type] || 'from-rainbow-1/20 to-rainbow-6/20'} backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-6 animate-pulse-soft`;
+                
+                // Animate in
+                wishText.style.transition = 'all 0.5s ease';
+                wishText.style.opacity = '1';
+                wishText.style.transform = 'translateY(0)';
+                
+                // Add bounce animation
+                currentWish.style.animation = 'none';
+                setTimeout(() => {
+                    currentWish.style.animation = 'pulseSoft 2s ease-in-out';
+                }, 10);
+                
+            }, 300);
+        }
+        
+        // Create wish effects
+        function createWishEffect(type) {
+            const container = document.getElementById('wishesDisplay');
+            const effects = {
+                fun: createConfettiBurst,
+                success: createStarBurst,
+                health: createHeartEffect,
+                magic: createSparkleEffect,
+                custom: createCustomEffect
+            };
+            
+            if (effects[type]) {
+                effects[type]();
+            }
+        }
+        
+        // Confetti burst effect
+        function createConfettiBurst() {
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    createConfettiPiece();
+                }, i * 20);
+            }
+        }
+        
+        function createConfettiPiece() {
+            const container = document.getElementById('wishesDisplay');
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti-piece');
+            
+            const colors = ['#FF0080', '#FF8C00', '#FFD700', '#32CD32', '#00BFFF', '#9370DB'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const size = 3 + Math.random() * 5;
+            
+            confetti.style.width = size + 'px';
+            confetti.style.height = size + 'px';
+            confetti.style.backgroundColor = color;
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.top = '0';
+            confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+            confetti.style.animation = `confettiFall ${1 + Math.random() * 2}s linear forwards`;
+            
+            container.appendChild(confetti);
+            
+            setTimeout(() => {
+                confetti.remove();
+            }, 3000);
+        }
+        
+        // Star burst effect
+        function createStarBurst() {
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    createStar();
+                }, i * 50);
+            }
+        }
+        
+        function createStar() {
+            const container = document.getElementById('wishesDisplay');
+            const star = document.createElement('div');
+            star.innerHTML = '⭐';
+            star.style.position = 'absolute';
+            star.style.fontSize = (10 + Math.random() * 20) + 'px';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.opacity = '0';
+            star.style.transform = 'scale(0)';
+            star.style.transition = 'all 0.5s ease';
+            star.style.zIndex = '5';
+            
+            container.appendChild(star);
+            
+            setTimeout(() => {
+                star.style.opacity = '1';
+                star.style.transform = 'scale(1) rotate(360deg)';
+            }, 10);
+            
+            setTimeout(() => {
+                star.style.opacity = '0';
+                star.style.transform = 'scale(0) rotate(0deg)';
+                
+                setTimeout(() => {
+                    star.remove();
+                }, 500);
+            }, 1000);
+        }
+        
+        // Heart effect
+        function createHeartEffect() {
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => {
+                    createHeart();
+                }, i * 100);
+            }
+        }
+        
+        function createHeart() {
+            const container = document.getElementById('wishesDisplay');
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.style.position = 'absolute';
+            heart.style.fontSize = (15 + Math.random() * 15) + 'px';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.bottom = '0';
+            heart.style.opacity = '1';
+            heart.style.transform = 'translateY(0)';
+            heart.style.transition = 'all 2s ease-out';
+            heart.style.zIndex = '5';
+            
+            container.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.style.transform = 'translateY(-100px)';
+                heart.style.opacity = '0';
+            }, 10);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 2000);
+        }
+        
+        // Sparkle effect
+        function createSparkleEffect() {
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    createSparkle();
+                }, i * 30);
+            }
+        }
+        
+        function createSparkle() {
+            const container = document.getElementById('wishesDisplay');
+            const sparkle = document.createElement('div');
+            sparkle.innerHTML = '✨';
+            sparkle.style.position = 'absolute';
+            sparkle.style.fontSize = (8 + Math.random() * 12) + 'px';
+            sparkle.style.left = Math.random() * 100 + '%';
+            sparkle.style.top = Math.random() * 100 + '%';
+            sparkle.style.opacity = '0';
+            sparkle.style.transform = 'scale(0)';
+            sparkle.style.transition = 'all 0.3s ease';
+            sparkle.style.zIndex = '5';
+            
+            container.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.style.opacity = '1';
+                sparkle.style.transform = 'scale(1)';
+                
+                setTimeout(() => {
+                    sparkle.style.opacity = '0';
+                    sparkle.style.transform = 'scale(0)';
+                    
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 300);
+                }, 500);
+            }, 10);
+        }
+        
+        // Custom effect
+        function createCustomEffect() {
+            createConfettiBurst();
+            setTimeout(createSparkleEffect, 500);
+            setTimeout(createStarBurst, 1000);
+        }
+        
+        // Party effect
+        function createPartyEffect() {
+            // Create party horn animation
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    createPartyHorn();
+                }, i * 200);
+            }
+            
+            // Create dancing emojis
+            const emojis = ['🎉', '🥳', '🎊', '👏', '💃', '🕺'];
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    createDancingEmoji(emojis[Math.floor(Math.random() * emojis.length)]);
+                }, i * 100);
+            }
+            
+            // Confetti
+            createConfettiBurst();
+        }
+        
+        function createPartyHorn() {
+            const container = document.getElementById('wishesDisplay');
+            const horn = document.createElement('div');
+            horn.innerHTML = '🎉';
+            horn.style.position = 'absolute';
+            horn.style.fontSize = '30px';
+            horn.style.left = Math.random() * 100 + '%';
+            horn.style.top = Math.random() * 100 + '%';
+            horn.style.opacity = '0';
+            horn.style.transform = 'scale(0) rotate(0deg)';
+            horn.style.transition = 'all 0.5s ease';
+            horn.style.zIndex = '5';
+            
+            container.appendChild(horn);
+            
+            setTimeout(() => {
+                horn.style.opacity = '1';
+                horn.style.transform = 'scale(1.5) rotate(360deg)';
+                
+                setTimeout(() => {
+                    horn.style.opacity = '0';
+                    horn.style.transform = 'scale(0) rotate(0deg)';
+                    
+                    setTimeout(() => {
+                        horn.remove();
+                    }, 500);
+                }, 1000);
+            }, 10);
+        }
+        
+        function createDancingEmoji(emoji) {
+            const container = document.getElementById('wishesDisplay');
+            const dance = document.createElement('div');
+            dance.innerHTML = emoji;
+            dance.style.position = 'absolute';
+            dance.style.fontSize = (20 + Math.random() * 15) + 'px';
+            dance.style.left = Math.random() * 100 + '%';
+            dance.style.bottom = '0';
+            dance.style.opacity = '1';
+            dance.style.transform = 'translateY(0)';
+            dance.style.transition = 'all 1s ease-in-out';
+            dance.style.zIndex = '5';
+            
+            container.appendChild(dance);
+            
+            // Dance animation
+            setTimeout(() => {
+                dance.style.transform = 'translateY(-50px) translateX(20px)';
+                
+                setTimeout(() => {
+                    dance.style.transform = 'translateY(-100px) translateX(-20px)';
+                    
+                    setTimeout(() => {
+                        dance.style.opacity = '0';
+                        dance.style.transform = 'translateY(-150px) translateX(0)';
+                        
+                        setTimeout(() => {
+                            dance.remove();
+                        }, 500);
+                    }, 300);
+                }, 300);
+            }, 10);
+        }
+        
+        // Balloon burst effect
+        function createBalloonBurst() {
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => {
+                    createBalloon();
+                }, i * 100);
+            }
+        }
+        
+        function createBalloon() {
+            const container = document.getElementById('wishesDisplay');
+            const balloon = document.createElement('div');
+            balloon.classList.add('floating-balloon');
+            
+            const colors = ['#FF0080', '#FF8C00', '#FFD700', '#32CD32', '#00BFFF', '#9370DB'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const size = 20 + Math.random() * 30;
+            
+            balloon.style.width = size + 'px';
+            balloon.style.height = size * 1.2 + 'px';
+            balloon.style.backgroundColor = color;
+            balloon.style.left = Math.random() * 100 + '%';
+            balloon.style.bottom = '0';
+            balloon.style.animation = 'floatSlow 3s ease-in-out forwards';
+            balloon.style.boxShadow = `0 0 ${size/2}px ${color}`;
+            
+            container.appendChild(balloon);
+            
+            // Pop after animation
+            setTimeout(() => {
+                balloon.style.animation = 'none';
+                balloon.style.transform = 'scale(1.2)';
+                balloon.style.opacity = '0.5';
+                
+                setTimeout(() => {
+                    balloon.remove();
+                }, 300);
+            }, 3000);
+        }
+        
+        // Fireworks show
+        function createFireworksShow() {
+            for (let i = 0; i < 8; i++) {
+                setTimeout(() => {
+                    createFirework();
+                }, i * 300);
+            }
+        }
+        
+        function createFirework() {
+            const container = document.getElementById('wishesDisplay');
+            const x = Math.random() * 80 + 10;
+            const y = Math.random() * 50 + 25;
+            
+            // Create center
+            const center = document.createElement('div');
+            center.style.position = 'absolute';
+            center.style.left = x + '%';
+            center.style.top = y + '%';
+            center.style.width = '10px';
+            center.style.height = '10px';
+            center.style.backgroundColor = '#FFD700';
+            center.style.borderRadius = '50%';
+            center.style.boxShadow = '0 0 20px #FFD700';
+            center.style.opacity = '0';
+            center.style.transform = 'scale(0)';
+            center.style.transition = 'all 0.5s ease';
+            center.style.zIndex = '5';
+            
+            container.appendChild(center);
+            
+            // Animate center
+            setTimeout(() => {
+                center.style.opacity = '1';
+                center.style.transform = 'scale(1)';
+                
+                // Create explosion
+                setTimeout(() => {
+                    center.style.opacity = '0';
+                    center.style.transform = 'scale(0)';
+                    
+                    // Create particles
+                    for (let j = 0; j < 20; j++) {
+                        setTimeout(() => {
+                            createFireworkParticle(x, y);
+                        }, j * 20);
+                    }
+                    
+                    setTimeout(() => {
+                        center.remove();
+                    }, 500);
+                }, 300);
+            }, 10);
+        }
+        
+        function createFireworkParticle(x, y) {
+            const container = document.getElementById('wishesDisplay');
+            const particle = document.createElement('div');
+            
+            const colors = ['#FF0000', '#FF4500', '#FFD700', '#FFFF00', '#00FF00', '#00FFFF', '#9370DB'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const size = 2 + Math.random() * 4;
+            const angle = Math.random() * Math.PI * 2;
+            const distance = 30 + Math.random() * 50;
+            
+            particle.style.position = 'absolute';
+            particle.style.left = x + '%';
+            particle.style.top = y + '%';
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.backgroundColor = color;
+            particle.style.borderRadius = '50%';
+            particle.style.boxShadow = `0 0 ${size*2}px ${color}`;
+            particle.style.opacity = '1';
+            particle.style.transform = 'translate(0, 0)';
+            particle.style.transition = 'all 1s ease-out';
+            particle.style.zIndex = '5';
+            
+            container.appendChild(particle);
+            
+            setTimeout(() => {
+                const targetX = Math.cos(angle) * distance;
+                const targetY = Math.sin(angle) * distance;
+                particle.style.transform = `translate(${targetX}px, ${targetY}px)`;
+                particle.style.opacity = '0';
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 1000);
+            }, 10);
+        }
+        
+        // Add to recent wishes (simplified)
+        function addToRecentWishes(wish) {
+            // In a real app, you would save this to localStorage or send to a server
+            console.log('New wish added:', wish);
+        }
+        
+        // Initialize with a random wish
+        setTimeout(() => {
+            const types = ['fun', 'success', 'health', 'magic'];
+            const randomType = types[Math.floor(Math.random() * types.length)];
+            const randomWish = wishes[randomType][Math.floor(Math.random() * wishes[randomType].length)];
+            displayWish(randomWish, randomType);
+        }, 1000);
+    }
+</script>
+</body>
+</html>
